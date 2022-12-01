@@ -22,6 +22,5 @@ pub fn solve_part1(input: &[Vec<u32>]) -> u32 {
 pub fn solve_part2(input: &[Vec<u32>]) -> u32 {
     let mut a = input.iter().map(|e| e.iter().sum()).collect::<Vec<u32>>();
     a.sort();
-    a.reverse();
-    a[0..3].iter().sum()
+    a[a.len()-3..].iter().sum()
 }
