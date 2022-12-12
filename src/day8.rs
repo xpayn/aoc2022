@@ -55,7 +55,7 @@ impl Forest {
             self.trees[i].iter().enumerate().for_each(|(col, &tree)| {
                 let row = i;
                 let mut coeff = col - left_max_idx;
-                if (row == 2 && col == 3) {
+                if row == 2 && col == 3 {
                     println!("{} {} {}", tree, left_max, left_max_idx);
                 }
                 if tree > left_max {
